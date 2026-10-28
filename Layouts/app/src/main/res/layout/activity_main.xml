@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Primer elemento: persona 1  -->
+    <ImageView
+        android:id="@+id/ivPersona1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_persona1"
+        android:src="@drawable/person_01" />
+
+    <!-- Segundo elemento: persona 2  -->
+    <ImageView
+        android:id="@+id/ivPersona2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_persona2"
+        android:src="@drawable/person_02" />
+
+    <!-- Tercer elemento: animal 1 -->
+    <ImageView
+        android:id="@+id/ivOso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_animal1"
+        android:src="@drawable/oso" />
+
+</LinearLayout>
