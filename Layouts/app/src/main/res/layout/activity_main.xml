@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="@android:color/white"
     tools:context=".MainActivity">
 
@@ -13,7 +13,6 @@
         android:id="@+id/ivPersona1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/desc_persona1"
         android:src="@drawable/person_01" />
 
     <!-- Segundo elemento: persona 2  -->
@@ -21,15 +20,12 @@
         android:id="@+id/ivPersona2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/desc_persona2"
         android:src="@drawable/person_02" />
 
-    <!-- Tercer elemento: animal 1 -->
+    <!-- Tercer elemento: Oso -->
     <ImageView
         android:id="@+id/ivOso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/desc_animal1"
         android:src="@drawable/oso" />
-
 </LinearLayout>
