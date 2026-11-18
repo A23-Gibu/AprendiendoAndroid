@@ -1,0 +1,50 @@
+cat << 'EOF' > .gitignore
+# Archivos compilados y generados por Android / Java / Kotlin
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Carpetas de compilación (incluye las clases generadas por View Binding y R)
+build/
+app/build/
+captures/
+.cxx/
+.externalNativeBuild/
+
+# Configuración local de Gradle y caché
+.gradle/
+local.properties
+
+# Archivos específicos de Android Studio / IntelliJ IDEA
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/deploymentTargetSelector.xml
+.idea/deploymentTargetDropDown.xml
+.idea/render.experimental.xml
+.idea/misc.xml
+.idea/compiler.xml
+
+# Registros, volcados y archivos temporales
+*.log
+hs_err_pid*
+replay_pid*
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Claves de firma y secretos (seguridad)
+*.jks
+*.keystore
+google-services.json
+EOF
