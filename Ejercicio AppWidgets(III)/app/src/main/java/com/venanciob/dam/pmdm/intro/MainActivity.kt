@@ -7,7 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.venanciob.dam.pmdm.intro.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), BorrarRespuestaDialog.BorrarRespuestaListener {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -33,21 +33,41 @@ class MainActivity : AppCompatActivity() {
             binding.tvRespuesta.text = resultado.getString(PreguntaDialog.EXTRA_RESPUESTA)
         }
 
+        // Botones Ejercicio 2
         binding.btnPreguntaSiNo.setOnClickListener {
             PreguntaDialog().show(supportFragmentManager, PreguntaDialog.TAG)
         }
-
         binding.btnListaElementos.setOnClickListener {
             ListaElementosDialog().show(supportFragmentManager, ListaElementosDialog.TAG)
         }
-
         binding.btnElegirUna.setOnClickListener {
             ElegirUnaOpcionDialog().show(supportFragmentManager, ElegirUnaOpcionDialog.TAG)
         }
-
         binding.btnElegirVarias.setOnClickListener {
             ElegirVariasOpcionesDialog().show(supportFragmentManager, ElegirVariasOpcionesDialog.TAG)
         }
+
+        // Botones Ejercicio 3
+        binding.btnRecordatorio.setOnClickListener {
+            RecordatorioDialog().show(supportFragmentManager, RecordatorioDialog.TAG)
+        }
+        binding.btnTuNombre.setOnClickListener {
+            TuNombreDialog().show(supportFragmentManager, TuNombreDialog.TAG)
+        }
+        binding.btnBorrarRespuesta.setOnClickListener {
+            BorrarRespuestaDialog().show(supportFragmentManager, BorrarRespuestaDialog.TAG)
+        }
+        binding.btnElegirFecha.setOnClickListener {
+            ElegirFechaDialog().show(supportFragmentManager, ElegirFechaDialog.TAG)
+        }
+        binding.btnElegirHora.setOnClickListener {
+            ElegirHoraDialog().show(supportFragmentManager, ElegirHoraDialog.TAG)
+        }
+    }
+
+    // Callback de la interfaz BorrarRespuestaListener
+    override fun onBorrarConfirmado() {
+        binding.tvRespuesta.text = ""
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

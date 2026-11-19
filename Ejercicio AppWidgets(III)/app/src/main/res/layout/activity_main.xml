@@ -1,49 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnPreguntaSiNo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_pregunta_si_no" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnListaElementos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/btn_lista_elementos" />
+        <TextView
+            android:id="@+id/tvRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/texto_inicial"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnElegirUna"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/btn_elegir_una" />
+        <!-- Ejercicio 2 -->
+        <Button
+            android:id="@+id/btnPreguntaSiNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_pregunta_si_no" />
 
-    <Button
-        android:id="@+id/btnElegirVarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/btn_elegir_varias" />
+        <Button
+            android:id="@+id/btnListaElementos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_lista_elementos" />
 
-    <TextView
-        android:id="@+id/tvRespuesta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="@string/texto_inicial"
-        android:textAppearance="?attr/textAppearanceBodyLarge"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnElegirUna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_elegir_una" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnElegirVarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_elegir_varias" />
+
+        <!-- Ejercicio 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/separador_ej3"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <Button
+            android:id="@+id/btnRecordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_recordatorio" />
+
+        <Button
+            android:id="@+id/btnTuNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_tu_nombre" />
+
+        <Button
+            android:id="@+id/btnBorrarRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_borrar_respuesta" />
+
+        <Button
+            android:id="@+id/btnElegirFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_elegir_fecha" />
+
+        <Button
+            android:id="@+id/btnElegirHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_elegir_hora" />
+
+    </LinearLayout>
+</ScrollView>

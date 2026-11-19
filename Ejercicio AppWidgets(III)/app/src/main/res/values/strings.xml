@@ -8,6 +8,14 @@
     <string name="btn_elegir_una">Elegir una opción</string>
     <string name="btn_elegir_varias">Elegir varias opciones</string>
 
+    <!-- Botones del Ejercicio 3 -->
+    <string name="separador_ej3">Ejercicio 3</string>
+    <string name="btn_recordatorio">Recordatorio (tres botones)</string>
+    <string name="btn_tu_nombre">Tu nombre (layout propio)</string>
+    <string name="btn_borrar_respuesta">Borrar respuesta (interfaz)</string>
+    <string name="btn_elegir_fecha">Elegir fecha</string>
+    <string name="btn_elegir_hora">Elegir hora</string>
+
     <!-- Diálogo 1: Pregunta Sí / No -->
     <string name="titulo_pregunta">Una pregunta</string>
     <string name="msg_pregunta">¿Te gusta programar en Android?</string>
@@ -23,6 +31,28 @@
     <string name="resp_una_opcion">Has elegido: %1$s.</string>
     <string name="resp_varias_opciones">Te interesan: %1$s.</string>
     <string name="ninguna">ninguna</string>
+
+    <!-- Diálogo 5: Recordatorio (3 botones) -->
+    <string name="titulo_actualizacion">Nueva versión disponible</string>
+    <string name="msg_actualizacion">Hay una actualización de la app con mejoras y correcciones.</string>
+    <string name="mas_tarde">Más tarde</string>
+    <string name="no_gracias">No, gracias</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="resp_actualizacion">Actualización: %1$s</string>
+
+    <!-- Diálogo 6: Tu nombre -->
+    <string name="titulo_nombre">¿Cómo te llamas?</string>
+    <string name="hint_nombre">Tu nombre</string>
+    <string name="resp_nombre">¡Hola, %1$s!</string>
+
+    <!-- Diálogo 7: Borrar respuesta -->
+    <string name="titulo_borrar">¿Borrar la respuesta?</string>
+    <string name="msg_borrar">Se borrará el texto que aparece en la parte superior.</string>
+    <string name="borrar">Borrar</string>
+
+    <!-- Diálogos 8 y 9: Fecha y Hora -->
+    <string name="resp_fecha">Fecha seleccionada: %1$s</string>
+    <string name="resp_hora">Hora seleccionada: %1$s</string>
 
     <string-array name="plataformas">
         <item>Android</item>
