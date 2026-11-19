@@ -33,8 +33,20 @@ class MainActivity : AppCompatActivity() {
             binding.tvRespuesta.text = resultado.getString(PreguntaDialog.EXTRA_RESPUESTA)
         }
 
-        binding.btnHacerPregunta.setOnClickListener {
+        binding.btnPreguntaSiNo.setOnClickListener {
             PreguntaDialog().show(supportFragmentManager, PreguntaDialog.TAG)
+        }
+
+        binding.btnListaElementos.setOnClickListener {
+            ListaElementosDialog().show(supportFragmentManager, ListaElementosDialog.TAG)
+        }
+
+        binding.btnElegirUna.setOnClickListener {
+            ElegirUnaOpcionDialog().show(supportFragmentManager, ElegirUnaOpcionDialog.TAG)
+        }
+
+        binding.btnElegirVarias.setOnClickListener {
+            ElegirVariasOpcionesDialog().show(supportFragmentManager, ElegirVariasOpcionesDialog.TAG)
         }
     }
 

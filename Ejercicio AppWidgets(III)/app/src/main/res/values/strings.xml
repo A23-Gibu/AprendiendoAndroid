@@ -1,13 +1,34 @@
 <resources>
     <string name="app_name">DialogosConRespuesta</string>
-    <string name="btn_hacer_pregunta">Hacer pregunta</string>
-    <string name="texto_inicial">Pulsa el botón para responder a la pregunta</string>
+    <string name="texto_inicial">Pulsa un botón para responder</string>
 
+    <!-- Botones del Ejercicio 2 -->
+    <string name="btn_pregunta_si_no">Pregunta Sí / No</string>
+    <string name="btn_lista_elementos">Lista de elementos</string>
+    <string name="btn_elegir_una">Elegir una opción</string>
+    <string name="btn_elegir_varias">Elegir varias opciones</string>
+
+    <!-- Diálogo 1: Pregunta Sí / No -->
     <string name="titulo_pregunta">Una pregunta</string>
     <string name="msg_pregunta">¿Te gusta programar en Android?</string>
     <string name="si">Sí</string>
     <string name="no">No</string>
-
     <string name="resp_si">¡Genial! Sigue practicando con las vistas y los diálogos.</string>
     <string name="resp_no">¡Ánimo! Poco a poco le cogerás el gusto.</string>
+
+    <!-- Diálogos 2, 3 y 4: Plataformas -->
+    <string name="titulo_plataformas">¿Para qué plataformas te gustaría programar?</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="resp_una_opcion">Has elegido: %1$s.</string>
+    <string name="resp_varias_opciones">Te interesan: %1$s.</string>
+    <string name="ninguna">ninguna</string>
+
+    <string-array name="plataformas">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Web</item>
+        <item>Escritorio</item>
+        <item>Videojuegos</item>
+    </string-array>
 </resources>
