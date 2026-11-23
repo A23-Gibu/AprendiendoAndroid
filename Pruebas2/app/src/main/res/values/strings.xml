@@ -2,4 +2,5 @@
     <string name="app_name">Pruebas</string>
     <string name="boton">Boton</string>
     <string name="pulsar">Pulsar</string>
+    <string name="hola_desde_kotlin">¡Hola desde Kotlin!</string>
 </resources>
