@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practica integrar componentes</string>
+    <string name="a_adir_10_de_propina">Añadir propina</string>
+    <string name="calcular_total">Calcular total</string>
+    <string name="importe_de_la_cuenta">Importe de la cuenta</string>
+    <string name="total_a_pagar">total a pagar: %1$.2f €</string>
+</resources>
