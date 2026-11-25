@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_carrito"
+        android:icon="@drawable/ic_carrito"
+        android:title="Carrito"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_carta"
+        android:icon="@drawable/ic_menu"
+        android:title="Carta"
+        app:showAsAction="ifRoom" />
+
+    <!-- Submenú con selección única (radio buttons) -->
+    <item
+        android:id="@+id/action_ordenar"
+        android:title="Ordenar por"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/orden_nombre"
+                    android:checked="true"
+                    android:title="Por nombre" />
+                <item
+                    android:id="@+id/orden_precio"
+                    android:title="Por precio" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_ajustes"
+        android:title="Ajustes"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_acerca_de"
+        android:title="Acerca de"
+        app:showAsAction="never" />
+</menu>
