@@ -21,6 +21,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--Se añade lo de parent activity para que sepa donde volver al darle a la flecha-->
+        <activity
+            android:name=".CartaActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CarritoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AjustesActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".MainActivity"/>
+
+
     </application>
 
 </manifest>
