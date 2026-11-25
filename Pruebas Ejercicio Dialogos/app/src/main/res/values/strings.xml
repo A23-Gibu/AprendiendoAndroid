@@ -2,4 +2,6 @@
     <string name="app_name">Ejercicio Dialogos</string>
     <string name="pedido_pendiente">Pedido pendiente</string>
     <string name="cancelar_pedido">Cancelar pedido</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="reiniciar_pedido">Reiniciar pedido</string>
 </resources>

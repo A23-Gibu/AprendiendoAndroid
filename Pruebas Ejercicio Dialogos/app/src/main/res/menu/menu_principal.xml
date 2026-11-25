@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Hay que añadir el xlmns:app para poder usar el showAsAction-->
+
+    <item
+        android:id="@+id/action_reiniciar"
+        android:icon="@drawable/ic_reiniciar"
+        android:title="@string/reiniciar_pedido"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_acerca_de"
+        android:title="@string/acerca_de"
+        app:showAsAction="never" />
+
+</menu>
