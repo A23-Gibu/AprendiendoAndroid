@@ -1,0 +1,79 @@
+# =====================================================================
+#  .gitignore para proyectos de Android Studio (Kotlin / Java)
+#  Clonar repositorio y Android Studio regenera la configuración local
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# Configuración local de la máquina (NUNCA se sube)
+# ---------------------------------------------------------------------
+# Ruta al SDK de Android de cada equipo; Android Studio la crea al abrir
+local.properties
+
+# ---------------------------------------------------------------------
+# Gradle y compilación
+# ---------------------------------------------------------------------
+.gradle/
+build/
+**/build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OJO: no ignorar gradle/wrapper/gradle-wrapper.jar ni gradlew / gradlew.bat.
+# Son necesarios para que el proyecto compile igual en todos los equipos.
+!gradle/wrapper/gradle-wrapper.jar
+
+# ---------------------------------------------------------------------
+# IntelliJ / Android Studio
+# ---------------------------------------------------------------------
+# Se ignora la carpeta .idea completa: guarda rutas, ventanas abiertas y
+# preferencias de cada usuario, y es la principal fuente de conflictos.
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# ---------------------------------------------------------------------
+# Binarios generados
+# ---------------------------------------------------------------------
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output-metadata.json
+
+# ---------------------------------------------------------------------
+# Firma de aplicaciones (claves privadas: NUNCA al repositorio)
+# ---------------------------------------------------------------------
+*.jks
+*.keystore
+keystore.properties
+
+# ---------------------------------------------------------------------
+# Secretos y claves de API
+# ---------------------------------------------------------------------
+secrets.properties
+# Si usáis Firebase y quieres compartir el proyecto ya configurado,
+# comenta la siguiente línea para que google-services.json sí se suba.
+google-services.json
+
+# ---------------------------------------------------------------------
+# Logs, temporales y ficheros del sistema operativo
+# ---------------------------------------------------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------
+# Otros editores
+# ---------------------------------------------------------------------
+.vscode/
+.fleet/

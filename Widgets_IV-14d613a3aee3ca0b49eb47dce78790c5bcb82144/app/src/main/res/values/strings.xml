@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Widgets_IV</string>
+    <string name="titulo_barra">ListView</string>
+
+    <string name="elige">Elige:</string>
+    <string name="sin_eleccion">Aquí saldrá tu elección</string>
+    <string name="has_elegido">Has elegido: %1$s</string>
+
+    <!-- Las provincias están en el fichero aparte provincias.xml -->
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/fila_provincia.xml
+     Layout de UNA fila de la lista. La raíz es un TextView, que es lo que
+     espera ArrayAdapter cuando no se le indica otro id. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/alto_minimo_tactil"
+    android:paddingHorizontal="@dimen/separacion_pequena"
+    android:textColor="@color/rojo_fila"
+    android:textSize="@dimen/texto_fila"
+    android:textStyle="italic" />

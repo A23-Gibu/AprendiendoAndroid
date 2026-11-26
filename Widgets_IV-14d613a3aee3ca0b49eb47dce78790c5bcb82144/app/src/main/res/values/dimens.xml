@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="margen_pantalla">16dp</dimen>
+    <dimen name="separacion_pequena">8dp</dimen>
+    <dimen name="separacion_media">12dp</dimen>
+    <dimen name="separacion_grande">16dp</dimen>
+    <dimen name="alto_minimo_tactil">48dp</dimen>
+    <dimen name="texto_fila">22sp</dimen>
+    <dimen name="texto_resultado">34sp</dimen>
+</resources>
