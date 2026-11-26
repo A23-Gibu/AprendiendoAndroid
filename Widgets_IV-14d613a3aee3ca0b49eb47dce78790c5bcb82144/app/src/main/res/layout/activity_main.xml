@@ -35,15 +35,15 @@
             android:text="@string/elige"
             android:textAppearance="?attr/textAppearanceLabelLarge" />
 
-        <!-- La lista ocupa todo el espacio libre (peso 1) y se desplaza -->
-        <ListView
-            android:id="@+id/lvProvincias"
+        <!-- sustituimos el listview por recyclerview -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProvincias"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginTop="@dimen/separacion_pequena"
-            android:divider="?attr/colorOutlineVariant"
-            android:dividerHeight="1dp" />
+            android:scrollbars="vertical"
+            tools:listitem="@layout/fila_provincia" />
 
         <!-- Resultado: siempre visible debajo de la lista -->
         <TextView

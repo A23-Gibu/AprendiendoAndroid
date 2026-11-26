@@ -1,11 +1,12 @@
 package com.venanciob.dam.pmdm.widgets_iv
 
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.venanciob.dam.pmdm.widgets_iv.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Barra de título: el icono se pone en el XML con app:logo
         setSupportActionBar(binding.toolbar)
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
@@ -32,18 +32,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun configurarLista() {
-        // 1. Datos: se leen del fichero res/values/provincias.xml
-        //    (para ver solo las de Castilla y León: R.array.provincias_cyl)
-        val provincias = resources.getStringArray(R.array.provincias_espana)
+        // 1. Datos convertidos a List<String>
+        val provincias = resources.getStringArray(R.array.provincias_espana).toList()
 
-        // 2. Adaptador: une los datos con el layout de cada fila
-        val adaptador = ArrayAdapter(this, R.layout.fila_provincia, provincias)
-        binding.lvProvincias.adapter = adaptador
+        // 2. LayoutManager: obligatorio para decirle que coloque las filas en vertical
+        binding.rvProvincias.layoutManager = LinearLayoutManager(this)
 
-        // 3. Escuchador: se ejecuta al pulsar una fila.
-        //    parent = el ListView, view = la fila, position = índice, id = id de la fila
-        binding.lvProvincias.setOnItemClickListener { _, _, position, _ ->
-            binding.tvResultado.text = getString(R.string.has_elegido, provincias[position])
+        // 3. ItemDecoration: añade la línea separadora entre filas (antes lo hacía android:divider)
+        binding.rvProvincias.addItemDecoration(
+            DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        )
+
+        // 4. Adaptador: le pasamos la lista y la función lambda que se ejecutará al pulsar una fila
+        binding.rvProvincias.adapter = ProvinciaAdapter(provincias) { provincia ->
+            binding.tvResultado.text = getString(R.string.has_elegido, provincia)
         }
     }
 }
